@@ -14,22 +14,18 @@ const IndexPage = ({ data }) => (
 
     <HeroSection
       img={data.img.childImageSharp.fluid}
-      title="I write Code"
-      subtitle="LearnCodeOnline.in"
-      heroclass="hero-background"
+      title="AV Organics and Medicines"
+      subtitle=""
+      heroclass="about-background"
     />
-    <Infoblock heading="About Us" />
+
     <Coursecart courses={data.courses} />
-    <Dualinfoblock
-      heading="Our Team"
-      imagesource="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    />
   </Layout>
 )
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "heromain.png" }) {
+    img: file(relativePath: { eq: "heromain10.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG

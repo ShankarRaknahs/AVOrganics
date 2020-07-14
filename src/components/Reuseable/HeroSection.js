@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image"
 export default function HeroSection({ img, title, subtitle, heroclass }) {
   return (
     <BackgroundImage className={heroclass} fluid={img}>
-      <h1 className="text-white text-uppercase text-center display-4">
+      <h1 className="text-white text-uppercase font-weight-bold text-center display-4">
         {title}
       </h1>
       <div>

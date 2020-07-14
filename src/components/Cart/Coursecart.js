@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Heading from "../Reuseable/Heading"
 import Img from "gatsby-image"
+import { icons } from "react-icons/lib"
 
 const getCaty = items => {
   let holdItems = items.map(items => {
@@ -40,7 +41,7 @@ export default class Coursecart extends Component {
     return (
       <section className="py-5">
         <div className="container">
-          <Heading title="Courses" />
+          <Heading title="Food and Medicines" />
           <div className="row my-3">
             <div className="col-10 mx-auto text-center">
               {this.state.mycategories.map((category, index) => {
@@ -63,17 +64,15 @@ export default class Coursecart extends Component {
           <div className="row">
             {this.state.mycourses.map(({ node }) => {
               return (
-                <div
-                  key={node.id}
-                  className="col-11 col-md-6 d-flex my-3 mx-auto"
-                >
-                  <Img fixed={node.image.fixed} />
+                <div key={node.id} className="col-11 col-md-3 d-flex my-5 mx-9">
                   <div className="flex-grow-1 px-3">
+                    <Img fixed={node.image.fixed} />
                     <div className="d-flex justify-content-between">
-                      <h6 className="mb-0">{node.title}</h6>
-                      <h6 className="mb-0 text-success">${node.price}</h6>
+                      <h2 className="mb-0">{node.title}</h2>
                     </div>
-                    <p className="text-muted">
+
+                    <h6 className="mb-1 mt-1 text-success">Rs.{node.price}</h6>
+                    <p className="word-wrap">
                       <small>{node.description.description}</small>
                     </p>
                     <button
@@ -86,7 +85,7 @@ export default class Coursecart extends Component {
                     snipcart-add-item
                     "
                     >
-                      Join Now
+                      Buy Now
                     </button>
                   </div>
                 </div>

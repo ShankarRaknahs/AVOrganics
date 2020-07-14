@@ -5,19 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from "../components/Reuseable/HeroSection"
 import Infoblock from "../components/Reuseable/Infoblock"
+import Dualinfoblock from "../components/Reuseable/Dualinfoblock"
 import Contact from "../components/Contact/Contact"
 
 const ContactPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
-    <HeroSection
-      img={data.img.childImageSharp.fluid}
-      title="Contact Us"
-      subtitle=""
-      heroclass="about-background"
+    <SEO title="Contact" />
+    <Dualinfoblock
+      heading="How can we Help?"
+      imagesource="https://images.pexels.com/photos/701727/pexels-photo-701727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     />
-    <Infoblock heading="How can we help?" />
-    <Contact />
   </Layout>
 )
 

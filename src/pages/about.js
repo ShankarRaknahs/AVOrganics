@@ -11,17 +11,7 @@ import Teamphotosection from "../components/About/Teamphotosection"
 const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <HeroSection
-      img={data.img.childImageSharp.fluid}
-      title="About LCO"
-      subtitle=""
-      heroclass="about-background"
-    />
-    <Dualinfoblock
-      heading="A message from CEO"
-      imagesource="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    />
-    <Infoblock heading="About Vision" />
+    <Infoblock heading="About us" />
     <Teamphotosection />
   </Layout>
 )

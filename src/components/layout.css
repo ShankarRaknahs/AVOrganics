@@ -1,5 +1,5 @@
 .bg-theme {
-  background-color: #1287a5;
+  background-color: #218f76;
 }
 .cart-icon {
   font-size: 2rem;
@@ -13,7 +13,7 @@
 }
 
 .about-background {
-  min-height: 30vh;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;

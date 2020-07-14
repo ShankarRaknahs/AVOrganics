@@ -4,30 +4,22 @@ import { Link } from "gatsby"
 
 export default function Dualinfoblock({ heading, imagesource }) {
   return (
-    <section className="my-4 py-4 bg-theme">
+    <section className="py-4 bg-theme">
       <div className="container">
         <Heading title={heading} />
         <div className="row">
           <div className="col-8 mx-auto">
             <p className="lead text-white mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              harum consequatur qui, magnam, necessitatibus dignissimos
-              assumenda veniam explicabo iste consectetur magni earum, nesciunt
-              repellendus est sint dolorem illum! Impedit fugiat fuga minima
-              nostrum dicta officiis, labore facere, ipsum ut quam rerum quia ad
-              inventore laborum. Aspernatur perspiciatis hic rem eaque! Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
-              unde, quod maiores nam ea quis excepturi at veritatis, architecto,
-              fugit autem eum. Cum sapiente dolorem expedita atque pariatur
-              officiis sed fugiat placeat iure incidunt? Magnam eius
-              consequuntur est architecto eaque? Aut quia illo consequatur
-              tenetur voluptatum ad excepturi incidunt sed, quisquam, odio
-              autem, saepe repellendus provident quidem! Iure, quo eum?
-              Architecto eos eum quaerat culpa totam quod quis quos eius amet
-              cupiditate deleniti ullam quo cumque, fugiat adipisci maxime!
-              Suscipit sapiente atque minima dolor. Vel dolorum sint at quos
-              commodi autem maxime consectetur ut, repellendus reiciendis animi
-              laudantium expedita suscipit.
+              பொருட்களை +91- 9791607002 என்ற எண்ணுக்கு போன் செய்தோ அல்லது வாட்ஸ்
+              ஆப் மூலமாக குறுஞ்செய்தி அனுப்பியோ ஆர்டர் செய்து ஆன்லைன் அல்லது
+              வங்கி மூலமாக பணம் செலுத்தினால் Proffessional Courier மூலமாக
+              பொருட்களை உங்கள் வீடுகளுக்கே அனுப்பி வைக்கப்படும்.
+            </p>
+
+            <p className="lead text-white mb-5">
+              If you need our products please make a call or whatsapp message to
+              +91- 9791607002, and you will pay the amount through bank, then we
+              will send that products to your home via proffessional courier.
             </p>
           </div>
           <div className="col-4">
@@ -38,15 +30,18 @@ export default function Dualinfoblock({ heading, imagesource }) {
                 alt="Image goes here"
               />
               <div className="card-body">
-                <h5 className="card-title text-success">Just click photos</h5>
+                <h5 className="card-title text-success">
+                  Whatsapp and Get it delivered
+                </h5>
                 <p className="card-text text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Optio, unde dolorem inventore ea aut numquam dicta
-                  reprehenderit culpa. Laboriosam, quaerat blanditiis deserunt
-                  atque optio sit doloremque quibusdam dicta id ducimus!
+                  Send an whatsapp message to +91- 9791607002 and we will take
+                  care of rest
                 </p>
-                <a href="#" className="btn btn-warning btn-block">
-                  {heading}
+                <a
+                  href="https://api.whatsapp.com/send?phone=919791607002&text=Hello.%20We%20would%20want%20to%20avail%20your%20services.%20Kindly%20get%20in%20touch%20with%20us&source=&data="
+                  className="btn btn-warning btn-block"
+                >
+                  Click here to order in Whatsapp
                 </a>
               </div>
             </div>
