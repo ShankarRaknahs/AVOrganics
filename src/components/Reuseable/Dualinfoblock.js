@@ -21,6 +21,28 @@ export default function Dualinfoblock({ heading, imagesource }) {
               +91- 9791607002, and you will pay the amount through bank, then we
               will send that products to your home via proffessional courier.
             </p>
+
+            <h4>Service Area</h4>
+            <p className="text-white mb-5">
+              We deliver products all over india, but please do conform us
+              through whatsapp if you are making order out of Tamilnadu.
+            </p>
+
+            <h4>Delivery Time</h4>
+            <p className="text-white mb-5">
+              1-2 business days in TamilNadu <br />
+              2-5 business days outside TamilNadu <br />
+              **orders placed before 5PM on business days will be packed on same
+              day and orders placed on non-business days will be packed on next
+              business day.
+            </p>
+            <h4>Payment Options</h4>
+            <p className="text-white mb-5">
+              No Cash On delivery option as we use third party delivery service
+              like Proffessional couriers <br />
+              Payment has to be made in advance for all orders to +91-9942218555
+              through Google Pay/ Paypal/ Paytm/ Phonepe
+            </p>
           </div>
           <div className="col-4">
             <div className="card bg-dark">

@@ -10,10 +10,11 @@ export default function Infoblock({ heading }) {
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-white text-center">
             <p className="lead text-white mb-4">
-              We are selling organic products and herbal medicines. We are group
-              of organic farmers from nammazhwar’s vanagam centre. All farmers
-              doing variety of products in all over tamilnadu. Mainly we made
-              herbal medicines from this organic products.
+              We are selling Organic products and Herbal medicines. We are group
+              of organic farmers from Nammazhwar’s Vanagam Centre
+              <br />
+              We make herbal medicines from the organic products from our chain
+              of farmers in all over TamilNadu
             </p>
           </div>
         </div>

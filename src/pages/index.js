@@ -11,14 +11,7 @@ import Coursecart from "../components/Cart/Coursecart"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-
-    <HeroSection
-      img={data.img.childImageSharp.fluid}
-      title="AV Organics and Medicines"
-      subtitle=""
-      heroclass="about-background"
-    />
-
+    <Infoblock heading="AV Organics and Medicines" />
     <Coursecart courses={data.courses} />
   </Layout>
 )
@@ -43,7 +36,7 @@ export const query = graphql`
             description
           }
           image {
-            fixed(width: 200, height: 120) {
+            fixed(width: 300, height: 200) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }

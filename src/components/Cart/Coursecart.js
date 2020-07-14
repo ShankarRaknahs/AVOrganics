@@ -40,15 +40,14 @@ export default class Coursecart extends Component {
   render() {
     return (
       <section className="py-5">
-        <div className="container">
-          <Heading title="Food and Medicines" />
+        <div className="container-fluid">
           <div className="row my-3">
-            <div className="col-10 mx-auto text-center">
+            <div className="col-11 mx-9 my-1 text-center">
               {this.state.mycategories.map((category, index) => {
                 return (
                   <button
                     type="button"
-                    className="btn btn-info m-3 px-3"
+                    className="btn btn-outline-info m-2 px-3"
                     key={index}
                     onClick={() => {
                       this.catyClicked(category)
@@ -64,17 +63,24 @@ export default class Coursecart extends Component {
           <div className="row">
             {this.state.mycourses.map(({ node }) => {
               return (
-                <div key={node.id} className="col-11 col-md-3 d-flex my-5 mx-9">
-                  <div className="flex-grow-1 px-3">
+                <div key={node.id} className="col-11 col-md-3 d-flex my-1 mx-9">
+                  <div className="flex-grow-1 mt-4 px-3">
                     <Img fixed={node.image.fixed} />
                     <div className="d-flex justify-content-between">
                       <h2 className="mb-0">{node.title}</h2>
                     </div>
 
-                    <h6 className="mb-1 mt-1 text-success">Rs.{node.price}</h6>
-                    <p className="word-wrap">
-                      <small>{node.description.description}</small>
-                    </p>
+                    <h4 className="mb-1 mt-1 text-success">Rs.{node.price}</h4>
+                    <button
+                      type="button"
+                      class="btn btn-link"
+                      data-toggle="modal"
+                      data-target="#descriptionModal"
+                    >
+                      View more details...
+                    </button>
+                    <br />
+
                     <button
                       data-item-id={node.id}
                       data-item-name={node.title}

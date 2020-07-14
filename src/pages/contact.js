@@ -7,13 +7,14 @@ import HeroSection from "../components/Reuseable/HeroSection"
 import Infoblock from "../components/Reuseable/Infoblock"
 import Dualinfoblock from "../components/Reuseable/Dualinfoblock"
 import Contact from "../components/Contact/Contact"
+import Contactinfo from "../components/Reuseable/Contactinfo"
 
 const ContactPage = ({ data }) => (
   <Layout>
     <SEO title="Contact" />
-    <Dualinfoblock
+    <Contactinfo
       heading="How can we Help?"
-      imagesource="https://images.pexels.com/photos/701727/pexels-photo-701727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      imagesource="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     />
   </Layout>
 )
