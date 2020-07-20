@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Infoblock heading="AV Organics and Medicines" />
-    <Coursecart courses={data.courses} />
+    <Coursecart courses={data.items} />
   </Layout>
 )
 
