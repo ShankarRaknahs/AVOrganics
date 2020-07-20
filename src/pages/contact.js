@@ -3,10 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HeroSection from "../components/Reuseable/HeroSection"
-import Infoblock from "../components/Reuseable/Infoblock"
-import Dualinfoblock from "../components/Reuseable/Dualinfoblock"
-import Contact from "../components/Contact/Contact"
 import Contactinfo from "../components/Reuseable/Contactinfo"
 
 const ContactPage = ({ data }) => (

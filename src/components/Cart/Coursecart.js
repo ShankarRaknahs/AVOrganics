@@ -63,7 +63,7 @@ export default class Coursecart extends Component {
           <div className="row">
             {this.state.mycourses.map(({ node }) => {
               return (
-                <div key={node.id} className="col-11 col-md-3 d-flex my-1 mx-9">
+                <div key={node.id} className="col-11 col-md-3 d-flex mb-5 mx-9">
                   <div className="flex-grow-1 mt-4 px-3">
                     <Img fixed={node.image.fixed} />
                     <div className="d-flex justify-content-between">
