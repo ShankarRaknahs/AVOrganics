@@ -5,11 +5,8 @@
   font-size: 2rem;
 }
 .hero-background {
-  min-height: 100vh;
+  height: 50vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .about-background {
@@ -22,4 +19,9 @@
 
 .btn-warning {
   padding: 8px 35px;
+}
+
+.modalstyle {
+  width: 300;
+  display: flex;
 }

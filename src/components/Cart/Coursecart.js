@@ -1,7 +1,8 @@
 import React, { Component } from "react"
-import Heading from "../Reuseable/Heading"
 import Img from "gatsby-image"
-import { icons } from "react-icons/lib"
+//import { icons } from "react-icons/lib"
+import ModalContent from "../Reuseable/ModalContent"
+//import { Link } from 'gatsby-plugin-modal-routing'
 
 const getCaty = items => {
   let holdItems = items.map(items => {
@@ -39,7 +40,7 @@ export default class Coursecart extends Component {
   }
   render() {
     return (
-      <section className="py-5">
+      <section className="py-1">
         <div className="container-fluid">
           <div className="row my-3">
             <div className="col-11 mx-9 my-1 text-center">
@@ -69,30 +70,23 @@ export default class Coursecart extends Component {
                     <div className="d-flex justify-content-between">
                       <h2 className="mb-0">{node.title}</h2>
                     </div>
+                    <ModalContent
+                      buttonLabel="Read more..."
+                      title={node.title}
+                      description={node.description.description}
+                    />
 
                     <h4 className="mb-1 mt-1 text-success">Rs.{node.price}</h4>
-                    <button
-                      type="button"
-                      class="btn btn-link"
-                      data-toggle="modal"
-                      data-target="#descriptionModal"
-                    >
-                      View more details...
-                    </button>
+                    <p>{"(" + node.priceunit + ")"}</p>
+
                     <br />
 
-                    <button
-                      data-item-id={node.id}
-                      data-item-name={node.title}
-                      data-item-price={node.price}
-                      data-item-url="https://backwoods.netlify.app/"
-                      data-item-image={node.image.fixed.src}
-                      className="btn btn-warning
-                    snipcart-add-item
-                    "
+                    <a
+                      href="https://api.whatsapp.com/send?phone=919791607002&text=Hello.%20We%20would%20want%20to%20avail%20your%20services.%20Kindly%20get%20in%20touch%20with%20us&source=&data="
+                      className="btn btn-warning"
                     >
-                      Buy Now
-                    </button>
+                      Buy now through whatsapp
+                    </a>
                   </div>
                 </div>
               )

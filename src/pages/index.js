@@ -3,20 +3,21 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+//import HeroSection from "../components/Reuseable/HeroSection"
 import Infoblock from "../components/Reuseable/Infoblock"
 import Coursecart from "../components/Cart/Coursecart"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Infoblock heading="AV Organics and Medicines" />
+    <Infoblock heading="Welcome" />
     <Coursecart courses={data.items} />
   </Layout>
 )
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "heromain10.jpg" }) {
+    img: file(relativePath: { eq: "bann4.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -29,6 +30,7 @@ export const query = graphql`
           id
           title
           price
+          priceunit
           category
           description {
             description
