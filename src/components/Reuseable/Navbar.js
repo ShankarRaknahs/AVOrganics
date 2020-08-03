@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import logo from "../../images/avlogo.png"
+import logo from "../../images/avlogohd.png"
 //import { FaCartArrowDown } from "react-icons/fa"
 
 export default class Navbar extends Component {
@@ -53,11 +53,17 @@ export default class Navbar extends Component {
           <span className="text-dark">menu</span>
         </button>
 
-        <h2 className="text-uppercase font-weight-bold text-dark">
-          {" "}
-          Av Organics and Medicines
-        </h2>
-
+        <div className="column">
+          <h2 className="text-uppercase font-weight-bold text-dark">
+            {" "}
+            Av Organics and Medicines
+          </h2>{" "}
+          <h6 className="text-dark">
+            {" "}
+            மாறுபாடு இல்லாத உண்டி மறுத்துண்ணின் <br />
+            ஊறுபாடு இல்லை உயிர்க்கு
+          </h6>
+        </div>
         <div className={this.state.navbarClass}>
           <ul className="navbar-nav ml-auto mr-5">
             {this.state.menus.map(menu => {

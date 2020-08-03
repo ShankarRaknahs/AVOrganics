@@ -10,16 +10,10 @@ export default function Dualinfoblock({ heading, imagesource }) {
         <div className="row">
           <div className="col-8 mx-auto">
             <p className="lead text-white mb-5">
-              பொருட்களை +91- 9791607002 என்ற எண்ணுக்கு போன் செய்தோ அல்லது வாட்ஸ்
-              ஆப் மூலமாக குறுஞ்செய்தி அனுப்பியோ ஆர்டர் செய்து ஆன்லைன் அல்லது
-              வங்கி மூலமாக பணம் செலுத்தினால் Proffessional Courier மூலமாக
-              பொருட்களை உங்கள் வீடுகளுக்கே அனுப்பி வைக்கப்படும்.
-            </p>
-
-            <p className="lead text-white mb-5">
               If you need our products please make a call or whatsapp message to
-              +91- 9791607002, and you will pay the amount through bank, then we
-              will send that products to your home via proffessional courier.
+              +91- 9791607002, and make the payment through bank or Google Pay,
+              then we will send that products to your home via proffessional
+              courier.
             </p>
 
             <h4>Service Area</h4>
@@ -39,7 +33,7 @@ export default function Dualinfoblock({ heading, imagesource }) {
             <h4>Payment Options</h4>
             <p className="text-white mb-5">
               No Cash On delivery option as we use third party delivery service
-              like Proffessional couriers <br />
+              <br />
               Payment has to be made in advance for all orders to +91-9942218555
               through Google Pay/ Paypal/ Paytm/ Phonepe
             </p>
