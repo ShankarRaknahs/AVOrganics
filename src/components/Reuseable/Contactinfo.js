@@ -11,8 +11,9 @@ export default function Contactinfo({ heading, imagesource }) {
           <div className="col-8 mx-auto">
             <h2>AV Organics and Medicines</h2>
             <p className="text-white mb-5">
-              Head Office - Velacherry Chennai <br />
-              Branches - Peruvarani Theni <br />
+              Head Office - Velacherry, Chennai <br />
+              Branches - Peravurani, Thanjavur <br />
+              Branches - Periyakulam, Theni <br />
             </p>
 
             <h4>+91-9791607002</h4>
